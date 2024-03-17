@@ -2,7 +2,9 @@ name: Publish binaries on Release
 on: 
   release:
     types: [created]
-
+    
+permissions: write-all
+    
 jobs:
   releases-matrix:
     name: Release Go Binary
